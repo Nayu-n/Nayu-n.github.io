@@ -1,0 +1,180 @@
+@charset "utf-8";
+
+body {
+	margin: 0px;
+	/*background-color: Light purple;*/
+}
+.container {
+	margin: 0 auto;
+	padding: 0 16px;
+	max-width: 1000px;
+	background: rgb(255,255,255,0.85);
+}
+
+
+
+
+body {background-image: url(images/kirakira.png);
+background-repeat: repeat;
+}
+/* 
+各パートにパディング、背景、テキスト色などを指定する
+<div class="container">の子要素に指定する
+*/
+/* ヘッダー
+---------------------------------------------------- */
+.header-inner {
+	padding: 0px;
+	/*background: #bad7f5;*/
+}
+
+.headA{
+	display: inline-block;
+	padding-top: 15px;
+}
+
+.headB{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 40vh;
+	background-image: url(images/mein.png);
+	background-position: left;
+	background-size: cover;
+}
+
+.headB h1{
+	color: #fff;
+	text-shadow: 1px 1px 4px #E47AAD;
+	text-align: center;
+	font-size: 10vw;
+	margin-top:0;
+	margin-bottom: 10px;
+	
+}
+
+@media only screen and (min-width: 768px){
+	.headB h1{
+		font-size: 76px;
+	}
+}
+/* ナビゲーション
+---------------------------------------------------- */
+.nav-inner {
+	padding: 10px;
+	color: #000;
+	/*background: #0086f9;*/
+}
+
+.navbar{
+	display: block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	background-color: #F7A9D0;
+	border-radius: 50px;
+	float: right;
+	margin-top: 35px;
+	font-size:125%;
+}
+.navbar a{
+	display: block;
+	padding: 15px;
+	font-weight: bold;
+	color: #808080;
+	text-decoration: none;
+	border-radius: 50px;
+}
+
+.navbar a:hover{
+	background-color: #F7D0E4;
+}
+.navbar #current a {
+	color: #fff;
+	background: #F97DBB;
+
+}
+@media only screen and (min-width: 768px){
+	.navbar{
+		display:flex;
+		}
+}
+
+
+/* メイン
+---------------------------------------------------- */
+.main-inner {
+	padding: 0px;
+	/*background: #fffde3;*/
+
+/* 
+ レイアウトのイメージをしやすいように高さを設定。
+ 通常のwebデザインではレイアウトで高さを指定しない
+*/
+	/*height: 400px;*/
+}
+/* フッター
+---------------------------------------------------- */
+.footer-inner {
+	padding: 10px;
+	border-top: 1px solid #FFAA45;
+	/*background: #bad7f5;*/
+}
+.footA h2{
+	font-size: 20px;
+}
+.footA ul{
+	font-size: 14px;
+	list-style: none;
+}
+.footA a{
+	display:block;
+	padding: 5px;
+	color: #FF9B24;
+	text-decoration: none;
+}
+.footA a:hover{
+	background-color: #FFD4A1;
+	border-radius: 50px;
+}
+.copyright {
+	margin: 10mm;
+	padding-top: 20px;
+	text-align: center;
+	color: #999;
+}
+@media only screen and (min-width: 768px){
+	.footA{
+		display:flex;
+		}
+	.footA div{
+		flex: 1;
+		}
+	.footA div: not(:first-child) {
+		margin-left: 40px;
+		}
+}
+/* テーブル
+---------------------------------------------------- */
+table, td, th { 
+	border: 1px solid #F77FBB;
+}
+table{
+	margin-bottom: 50px;
+	font-size: small;
+	text-align: center;
+	width:100%;
+	table-layout: fixed; 
+}
+.top_c{
+	background-color: #F77FBB;
+}
+.left1{
+	text-align: center;
+	width: 3%;
+}
+
+
+
+
+
